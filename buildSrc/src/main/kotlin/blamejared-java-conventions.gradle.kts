@@ -1,6 +1,10 @@
 import com.blamejared.Properties
 import com.blamejared.Versions
 import com.blamejared.gradle.mod.utils.GMUtils
+import gradle.kotlin.dsl.accessors._3d41e6ef7ce6759a44bc369089ef4003.base
+import gradle.kotlin.dsl.accessors._3d41e6ef7ce6759a44bc369089ef4003.idea
+import gradle.kotlin.dsl.accessors._3d41e6ef7ce6759a44bc369089ef4003.java
+import gradle.kotlin.dsl.accessors._3d41e6ef7ce6759a44bc369089ef4003.publishing
 import org.gradle.jvm.tasks.Jar
 import java.nio.charset.StandardCharsets
 
