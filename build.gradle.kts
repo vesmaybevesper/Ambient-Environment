@@ -9,7 +9,7 @@ import java.util.*
 
 plugins {
     `java-library`
-    id("org.jetbrains.gradle.plugin.idea-ext") version "1.1.7"
+    id("org.jetbrains.gradle.plugin.idea-ext") version "1.4.1"
 }
 
 version = GMUtils.updatingVersion(Versions.MOD)
