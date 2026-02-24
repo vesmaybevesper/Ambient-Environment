@@ -6,7 +6,7 @@ import net.darkhax.curseforgegradle.TaskPublishCurseForge
 
 plugins {
     id("blamejared-modloader-conventions")
-    id("net.neoforged.moddev") version ("2.0.112")
+    id("net.neoforged.moddev") version ("2.0.140")
     id("com.modrinth.minotaur")
 }
 
@@ -29,6 +29,7 @@ neoForge {
 dependencies {
 }
 
+/*
 tasks.create<TaskPublishCurseForge>("publishCurseForge") {
     dependsOn(tasks.jar)
     apiToken = GMUtils.locateProperty(project, "curseforgeApiToken") ?: 0
@@ -56,4 +57,4 @@ modrinth {
     uploadFile.set(tasks.jar.get())
     loaders.add("neoforge")
 }
-tasks.modrinth.get().dependsOn(tasks.jar)
+tasks.modrinth.get().dependsOn(tasks.jar)*/

@@ -6,14 +6,13 @@ import net.darkhax.curseforgegradle.Constants as CFG_Constants
 
 plugins {
     id("blamejared-modloader-conventions")
-    id("fabric-loom") version "1.13-SNAPSHOT"
+    id("net.fabricmc.fabric-loom") version "1.15-SNAPSHOT"
     id("com.modrinth.minotaur")
 }
 
 dependencies {
     minecraft("com.mojang:minecraft:${Versions.MINECRAFT}")
-    mappings(loom.officialMojangMappings())
-    modImplementation("net.fabricmc:fabric-loader:${Versions.FABRIC_LOADER}")
+    implementation("net.fabricmc:fabric-loader:${Versions.FABRIC_LOADER}")
 }
 
 loom {
@@ -30,6 +29,7 @@ loom {
     }
 }
 
+/*
 tasks.create<TaskPublishCurseForge>("publishCurseForge") {
     dependsOn(tasks.remapJar)
     apiToken = GMUtils.locateProperty(project, "curseforgeApiToken")
@@ -55,4 +55,4 @@ modrinth {
     gameVersions.set(listOf(Versions.MINECRAFT))
     uploadFile.set(tasks.remapJar.get())
 }
-tasks.modrinth.get().dependsOn(tasks.remapJar)
+tasks.modrinth.get().dependsOn(tasks.remapJar)*/
