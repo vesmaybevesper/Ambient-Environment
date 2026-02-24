@@ -1,5 +1,7 @@
 import com.blamejared.Properties
 import com.blamejared.Versions
+import gradle.kotlin.dsl.accessors._1724fa97fa33dee989bc769d32c5910b.versionTracker
+import gradle.kotlin.dsl.accessors._3d41e6ef7ce6759a44bc369089ef4003.compileOnly
 import org.gradle.jvm.tasks.Jar
 
 plugins {
